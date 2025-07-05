@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Emotion Detector</h1>
+        <p>Enter a sentence, and we'll detect the emotion behind it!</p>
+        <form id="emotionForm" action="/predict_emotion" method="post">
+            <input type="text" name="text" id="text" placeholder="Enter your text here..." required>
+            <button type="submit">Predict Emotion</button>
+        </form>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+    

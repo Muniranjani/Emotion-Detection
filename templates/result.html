@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Emotion Detected!</h1>
+        <p><strong>Input Text:</strong> {{ text }}</p>
+        <p><strong>Predicted Emotion:</strong> <span class="typed-text" data-text="{{ predicted_emotion }}"></span></p>
+        <a href="/" class="btn">Try Again</a>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
